@@ -40,6 +40,19 @@ function createWindow() {
     {
       label: '设置',
       click: function () {
+        windowConfig['height'] = 600
+        windowConfig['frame'] = true
+        win = new BrowserWindow(windowConfig)
+        win.setSkipTaskbar(true)
+        win.setMenu(null)
+        win.setAlwaysOnTop(true)
+        win.loadURL(`file://${__dirname}/setting.html`)
+        win.on('ready-to-show', () => {
+          win.show()
+        })
+        win.on('close', () => {
+          win = null
+        })
       }
     },
     {

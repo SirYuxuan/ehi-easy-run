@@ -77,7 +77,7 @@
             this.$nextTick(function () {
                 document.addEventListener('keyup', function (e) {
                     if (e.keyCode === 27) {
-
+                      remote.getCurrentWindow().hide()
                     }
                 })
             })

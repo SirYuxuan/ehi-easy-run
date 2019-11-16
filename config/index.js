@@ -25,7 +25,7 @@ module.exports = {
 
   build: {
     index: path.resolve(__dirname, '../dist/index.html'),
-
+    setting: path.resolve(__dirname, '../dist/setting.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
