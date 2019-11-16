@@ -1,15 +1,20 @@
 {
-    "name": "helloworld",
-    "version": "1.0.0",
-    "description": "",
-    "main": "main.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "electron ."
-    },
-    "author": "SirYuxuan",
-    "license": "ISC",
-    "devDependencies": {
-      "electron": "^7.1.1"
-    }
-  }  
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "buildExe": "electron-packager . ehiEasyRun --overwrite=true --platform=win32 --arch=x64 --icon=icon.ico  --out=./out --asar --app-version=0.0.1"
+  },
+  "author": "SirYuxuan",
+  "license": "ISC",
+  "dependencies": {
+    "iconv": "^2.3.5",
+    "iconv-lite": "^0.5.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.1"
+  }
+}

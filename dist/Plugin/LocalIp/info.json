@@ -1,0 +1,8 @@
+{
+  "pluginName": "localIp",
+  "keys": "localIp",
+  "author": "Sir丶雨轩",
+  "type": "js",
+  "main": "main.js",
+  "icon": "Images/icon.png"
+}
