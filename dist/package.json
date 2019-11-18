@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "buildExe": "electron-packager . ehiEasyRun --overwrite=true --platform=win32 --arch=x64 --icon=icon.ico  --out=./out --asar --app-version=0.0.1"
+    "buildExe": "electron-packager . ehiEasyRun --overwrite=true --platform=darwin --arch=x64 --icon=icon.ico  --out=./out --asar --app-version=0.0.1"
   },
   "author": "SirYuxuan",
   "license": "ISC",
